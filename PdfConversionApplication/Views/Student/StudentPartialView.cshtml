@@ -1,0 +1,18 @@
+﻿@model PdfConversionApplication.Models.StudentInfo
+@{
+    // The layout is set to null, indicating that this view does not use a layout file.
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Details</title>
+</head>
+<body>
+    <h1>Student Details</h1>
+    <p>Name: @Model.Student_Name</p>
+    <p>ID: @Model.Id</p>
+    <p>Email: @Model.Email_Id</p>
+    <p>Standard: @Model.Standard</p>
+</body>
+</html>

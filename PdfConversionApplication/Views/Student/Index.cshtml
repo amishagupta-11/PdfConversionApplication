@@ -1,0 +1,15 @@
+﻿﻿@{
+    ViewData["Title"] = "Download PDF";
+}
+
+<h1>Download PDF File</h1>
+
+<!-- Button to download PDF -->
+<button onclick="downloadPdf()">Download PDF</button>
+
+<script type="text/javascript">
+    function downloadPdf() {
+        // Make an HTTP GET request to the DownloadPdf action
+        window.location.href = '@Url.Action("DownloadPdf", "Student")';
+    }
+</script>
